@@ -1,0 +1,605 @@
+/*Mobiles*/
+
+@media screen and (min-width: 320px) and (max-width: 479px){
+    
+/* ---------------------- MODALES CONTAINERS ----------------------- */
+  #modal-container {
+    visibility: hidden;
+  }
+
+/* ----------------- BOUTONS FERMER -------------- */
+  #btnCancel {
+    width:30px;
+    height:30px;
+    background:transparent;
+    border: 2px solid #7a1953;
+    border-radius: 50%;
+    position:relative;
+    cursor:pointer;
+    display:inline-block;
+    margin:0;
+    top: 57px;
+    left: 107px;
+    z-index: 2;
+  }
+  /* ----------------- CROIX DANS LE BOUTON 1-------------- */
+  #btnCancel::after{
+    width:14px;
+      height:2px;
+      background-color:#7a1953;
+      content:"";
+      left:50%;
+      top:50%;
+      margin-left:-7px;
+      margin-top:-2px;
+      position:absolute;
+      transform:rotate(-45deg);
+  }
+  
+  #btnCancel::before{
+      left:50%;
+      top:50%;
+      margin-left:-7px;
+      margin-top:-2px;
+      width:14px;
+      height:2px;
+      background-color:#7a1953;
+      content:"";
+      position:absolute;
+      transform:rotate(45deg);
+  }
+  /* ----------------- EFFETS AU HOVER BTN 1-------------- */
+  #btnCancel:hover{
+    background-color: #7a1953;
+  }
+  
+  #btnCancel:hover::before, #btnCancel:hover::after{
+    background-color: #ffffff;
+    width: 20px;
+    height: 3px;
+    margin-left:-10px;
+    margin-right: 10px;
+  }
+   /* ----------------- BTN CONTAINER 1-------------- */
+    #btnCancelContainer {
+    margin: 8px 0;
+    width: 400px;
+    text-align: center;
+  }
+ /* ----------------- BOUTON MODALE 2 -------------- */
+  #btnCancel2 {
+    width:60px;
+    height:60px;
+    background:transparent;
+    border: 4px solid #7a1953;
+    border-radius: 50%;
+    position:relative;
+    cursor:pointer;
+    display:inline-block;
+    margin:0;
+    top: 95px;
+    left: 189px;
+    z-index: 2;
+  }
+  /* ----------------- CROIX DANS LE BOUTON 2 -------------- */
+  #btnCancel2::after{
+    width:34px;
+      height:4px;
+      background-color:#7a1953;
+      content:"";
+      left:50%;
+      top:50%;
+      margin-left:-16px;
+      margin-top:-2px;
+      position:absolute;
+      transform:rotate(-45deg);
+  }
+  
+  #btnCancel2::before{
+      left:50%;
+      top:50%;
+      margin-left:-16px;
+      margin-top:-2px;
+      width:34px;
+      height:4px;
+      background-color:#7a1953;
+      content:"";
+      position:absolute;
+      transform:rotate(45deg);
+  }
+  /* ----------------- EFFETS AU HOVER BTN 2-------------- */
+  #btnCancel2:hover{
+    background-color: #7a1953;
+  }
+  
+  #btnCancel2:hover::before, #btnCancel2:hover::after{
+    background-color: #ffffff;
+    width: 23px;
+    height: 3px;
+    margin-left:-12px;
+    margin-right: 10px;
+  }
+  
+/* ----------------- DIV PRINCIPALES -------------- */
+body {
+  width: 100vw;
+  height: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 115vw;
+  height: auto;
+}
+
+/* ----------------- BACKGROUND -------------- */
+
+.background {
+  display: block;
+  margin: auto;
+  width:100vw;
+}
+
+/* ----------------- PHOTO PROFIL -------------- */
+
+.photo {
+       display: block;
+       margin: 0;
+       width: 20%;
+       left: 34%;
+       position: absolute;
+
+    }
+
+  .photo img {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    border: 2px solid rgba(150,46,81,1);
+    z-index: 10;
+  }
+
+/* ----------------- QR CODE RENVOI GITHUB -------------- */
+
+.svg_qrcode {
+ visibility: hidden;
+ opacity: 0;
+}
+
+/* ----------------- DETAILS HEADER -------------- */
+
+  .age {
+    position: relative;
+    font-size: 0.7em;
+    top: 25px;
+    left: 5px;
+  }
+  
+  .header_textes {
+    top: 145px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+.nom, .titre, .sous_titre {
+    font-size: 0.6em;
+}
+
+.nom {
+  display: block;
+  position: relative;
+  margin: 0;
+  top: -50px;
+  left: -5px;
+}
+
+.titre {
+  position: relative;
+  top: -2px;
+}
+
+.sous_titre {
+  position: relative;
+  top: -2px;
+}
+
+.mobilite {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-size: 0.8em;
+  color: #7a1953;
+  
+ 
+}
+
+.reseaux{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 150px;
+  position: relative;
+top: 0;
+left:0;
+  z-index: 6;
+  
+}
+
+.reseaux a {
+  display: flex;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.github{
+  position: relative;
+  left: -70%;
+  width: 10%;
+}
+
+.linkedin {
+  position: relative;
+  left: 40%;
+  width: 10%;
+}
+
+.reseaux img{
+  width: 40px;
+ 
+  z-index: 6;
+}
+
+/* ----------------- DIVS LIGNES -------------- */
+.ligne{
+  border-bottom: 1px solid black;
+  border-image: linear-gradient(90deg, rgba(150,46,81,1) 0%, rgba(208,153,168,1) 49%, rgba(150,46,81,1) 90%);
+  border-image-width: 1vw 1.5vw;
+  border-image-slice: 1;
+  width: 85px;
+
+}
+
+#ligne_titre {
+  top: 100px;
+  left: 36%;
+}
+
+#ligne_contact {
+  position: relative;
+  top: 55px;
+  left: -25px;
+}
+
+#ligne_profil {
+  position: relative;
+  top: 50px;
+  left: -25px;
+  width: 40%;
+}
+
+#ligne_hobbies {
+  position: relative;
+  top: 45px;
+  left: -25px;
+}
+
+#ligne_formation {
+  top: 4.5vh;
+    left: 34vw;
+    width: 40%;
+}
+
+#ligne_competences {
+  top: 15vh;
+  left: 31vw;
+  width: 40%;
+}
+
+#ligne_experience {
+  top: 7vh;
+  left: 12vw;
+  width: 60%;
+}
+
+/* ----------------- ICONES CONTAINER + ELEMENTS -------------- */
+
+
+  .icones {
+    font-size: 1.1em;
+  }
+
+  #grid1 .icones{
+    position: absolute;
+    display: flex;
+    left: -20px;
+    top: 55px;
+  }
+
+  .hobbies_icons {
+    top: 120px;
+    left: -72px;
+  }
+
+  .s1 .icon {
+    padding-bottom: 15px;
+}
+
+.graduate {
+  left: 16vw;
+  top: 4.6vh;
+}
+
+.fa-graduation-cap {
+position: relative;
+top: -12px;
+}
+
+#grid1 .s1 {
+  top: 10%;
+  left: 5%;
+  
+}
+
+.graduate i{
+  padding: 2.8vh;
+  }
+/* ----------------- CONTAINERS SECTIONS-------------- */
+
+  .grid_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 80px;
+}
+
+/* ----------------- SECTION GAUCHE -------------- */
+
+/* ----------------- CONTAINER GAUCHE-------------- */
+
+  #grid1 {
+    position: absolute;
+    width: 100vw;
+    top: 880px;
+    left: 0;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  /* ----------------- DIV 3 SECTIONS TEXTE -------------- */
+
+.textes_gauche {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* ----------------- TITRES CATEGORIES -------------- */
+
+.categorie_section_gauche {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  color: #a7a7a7;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  position: relative;
+  padding-top: 15px;
+  left: -30px;
+}
+
+  /* ----------------- MISE EN FORME TEXTES -------------- */
+
+  .texte_section_gauche {
+    width: 80vw;
+    font-size: 0.8em;
+
+  }
+
+
+/* ----------------- CONTAINERS SOUS SECTION -------------- */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#profil {
+  position: relative;
+  top: -130px;
+}
+
+#hobbies {
+  position: relative;
+  top: -250px;
+}
+
+/* ----------------- TITRES CATEGORIES -------------- */
+.grid_item{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.categorie_section_gauche {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    color: #a7a7a7;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+}
+
+/* ----------------- TEXTE CONTACT -------------- */
+
+.contenu_gauche {
+    position: relative;
+    top: 31px;
+    left: -23px;
+    text-align: center;
+}
+
+/* ----------------- TEXTE PROFIL -------------- */
+
+.description {
+    text-align: center;
+    position: relative;
+    top: 20px;
+    left: -23px;
+}
+
+/* ----------------- TEXTE HOBBIES -------------- */
+
+.liste {
+  text-align: center;
+  position: relative;
+  top: 0px;
+  left: -23px;
+}
+
+/* ----------------- SECTION DROITE -------------- */
+
+  #grid2 {
+    position: absolute;
+    width: 115vw;
+    top: -40px;
+    left: 0;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+/* ----------------- TITRES SECTION DROITE -------------- */
+
+.categorie_section_droite {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #d099a8;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+}
+
+/* ----------------- SOUS SECTION FORMATION -------------- */
+#formation {
+  position: relative;
+  top: 1050px;
+  left: -5vw;
+  width: 100%;
+}
+
+.formation {
+  top: 4vh;
+  left: 10vw;
+  width: 60%;
+}
+
+/* ----------------- SOUS SECTION COMPETENCES -------------- */
+
+#competences {
+  position: relative;
+  top: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.titre_competences {
+  position: relative;
+  left: -13px;
+  top: 90px;
+}
+
+/* ----------------- ICONES TECHNOLOGIES -------------- */
+
+.technologies_icons {
+  position: relative;
+  width: 280px;
+  max-height: 490px;
+  top: 130px;
+  left: -10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+ 
+}
+
+/* ----------------- DIV PROJET -------------- */
+
+.projets {
+  position: relative;
+  top: 17vh;
+  width: 60%;
+
+}
+
+/* ----------------- SOUS SECTION EXPERIENCES -------------- */
+
+#experience {
+  position: relative;
+  top: 750px;
+  left: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+
+.fin {
+  margin-bottom: 10vh;
+}
+
+.experiences {
+  font-size: 0.5em;
+  top: 5vh;
+  width: 100%;
+  
+}
+}
+
+/*Tablettes*/
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+
+}
+
+/*Notebooks*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+}
+
+/*Large Screens*/
+
+@media screen and (min-width: 1024px) and (max-width: 1199px){
+
+}
+
+/*Extra-Large Screens*/
+
+@media screen and (min-width: 1200px) and (max-width: 1920px){
+
+}
