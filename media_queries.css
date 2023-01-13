@@ -250,7 +250,6 @@ header {
   width: 15vw;
   position: static;
   z-index: 0;
-  
 }
 
 .reseaux a {
@@ -277,8 +276,7 @@ header {
 
 .reseaux img{
   width: 40px;
- 
-  z-index: 6;
+  z-index: 0;
 }
 
 /* ----------------- DIVS LIGNES -------------- */
