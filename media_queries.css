@@ -246,7 +246,8 @@ header {
   align-items: center;
   padding-bottom: 20px;
   margin-right: 57px;
-  width: 50px;
+  margin-top: 55px;
+  width: 15vw;
   position: static;
   z-index: 0;
   
@@ -605,7 +606,7 @@ top: -12px;
 
 
 .fin {
-  margin-bottom: 10vh;
+  /* margin-bottom: 10vh; */
 }
 
 .experiences {
