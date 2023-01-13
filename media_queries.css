@@ -244,12 +244,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 40px;
   padding-bottom: 20px;
+  margin-right: 57px;
   width: 50px;
-  position: relative;
-  top: 93vh;
-  left:92px;
+  position: static;
   z-index: 0;
   
 }
