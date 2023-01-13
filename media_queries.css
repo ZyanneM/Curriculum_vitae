@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 479px){
     
-/* ---------------------- MODALES CONTAINERS ----------------------- */
+  ---------------------- MODALES CONTAINERS -----------------------
   #modal-container {
     visibility: hidden;
   }
@@ -249,7 +249,7 @@ header {
   width: 50px;
   position: relative;
   top: 93vh;
-  left:122px;
+  left:92px;
   z-index: 0;
   
 }
